@@ -6,11 +6,11 @@
     background-image: url(../Imagenes/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-repeat:no-repeat;
     position: relative;
     padding-bottom: 5em;
     min-height: 100vh;
 }
+
 
 .body-pedidos
 {
@@ -20,7 +20,6 @@
     background-image: url(../Imagenes/pexels-pixabay-326268.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-repeat:no-repeat;
     position: relative;
     padding-bottom: 0,1em;
     min-height: 100vh;
@@ -34,7 +33,6 @@
     background-image: linear-gradient(to bottom, black, white);
     background-repeat: no-repeat;
     background-size: cover;
-    background-repeat:no-repeat;
     position: relative;
     padding-bottom: 5em;
     min-height: 100vh;
@@ -171,7 +169,7 @@ img
 .h1-index
 {
     font-family: 'Dancing Script', cursive;
-    font-size: 160px;
+    font-size: 75px;
     text-align: center;
     line-height: 130px;
     padding: 50px;
@@ -201,6 +199,14 @@ img
 {
     width: 60px;
     height: 60px;
+}
+
+@media (min-width: 768px)
+{
+    .h1-index
+    {
+        font-size: 160px;
+    }
 }
 
 
@@ -285,6 +291,17 @@ label
     font-size: 150%;
 }
 
+input:focus
+{
+    border: solid green;
+    outline: green;
+}
+
+textarea:focus
+{
+    border: solid green;
+    outline: green;
+}
 
 /************ FIN INDEX ***********/
 
