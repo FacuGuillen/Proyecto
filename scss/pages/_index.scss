@@ -1,0 +1,71 @@
+#section-inicio
+{
+    grid-area: inicio;
+    text-align: center;
+}
+
+#section-inicio a img
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#section-inicio p
+{
+    text-align: center;
+    font-family: 'Delius', cursive;
+    font-size: 100%;
+    margin-top: 70px;
+}
+
+#section-inicio .p-index
+{
+    font-family: 'Delius', cursive;
+    font-size: 200%;
+    text-align: center;
+    margin: 1%;
+}
+
+.h1-index
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    text-align: center;
+    line-height: 130px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+#section-inicio a img:hover
+{
+    transform: scale(1.1);
+}
+
+#section-inicio p
+{
+    margin-top: 55px;
+    font-size: 20px;
+}
+
+#section-inicio .p-index
+{
+    font-size: 50px;
+}
+
+
+#section-inicio a img
+{
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-width: 768px)
+{
+    .h1-index
+    {
+        font-size: 160px;
+    }
+}

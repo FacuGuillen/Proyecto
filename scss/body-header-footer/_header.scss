@@ -1,0 +1,59 @@
+#header
+{
+    background-color: rgba(255, 255, 255, 0.575);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.deco-header:hover
+{
+    transition: all .5s;
+    text-decoration: underline;
+}
+
+.header-blanco
+{
+    color: #fff !important;
+}
+
+.deco-header-blanco:hover
+{
+    transition: all .5s;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.deco-menu
+{
+    background-color: white;
+}
+
+/* HEADER GALERIA */ 
+#header-galeria
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-inicio
+{
+    width: 120px;
+    height: 80px;
+}
+
+#header-galeria
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-inicio
+{
+    width: 160px;
+    height: 100px;
+}
