@@ -1,4 +1,4 @@
-.body-1 {
+.body, .body-galeria, .body-pedidos {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -11,27 +11,11 @@
 }
 
 .body-pedidos {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   background-image: url(../Imagenes/pexels-pixabay-326268.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-bottom: 0, 1em;
-  min-height: 100vh;
 }
 
 .body-galeria {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   background-image: linear-gradient(to bottom, black, white);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-bottom: 5em;
-  min-height: 100vh;
 }
 
 img {
@@ -66,19 +50,8 @@ img {
 /* HEADER GALERIA */
 #header-galeria {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-}
-
-.logo-inicio {
-  width: 120px;
-  height: 80px;
-}
-
-#header-galeria {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -92,7 +65,7 @@ img {
   display: flex;
   background-color: rgba(255, 255, 255, 0.575);
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   width: 100%;
   color: black;
   justify-content: space-around;
@@ -124,55 +97,6 @@ img {
 
 .wp img:hover {
   transform: scale(1.2);
-}
-
-/*FOOTER PEDIDOS*/
-#footer-pedidos {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.575);
-  position: relative;
-  margin-top: 50px;
-  width: 100%;
-  color: black;
-  justify-content: space-around;
-  position: absolute;
-  bottom: 0;
-}
-
-@media (max-width: 1199px) {
-  #footer-pedidos {
-    position: relative;
-  }
-}
-/* FOOTER GALERIA */
-#footer-galeria {
-  grid-area: footer;
-  display: flex;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  color: black;
-  justify-content: space-around;
-}
-
-.logo-footer {
-  width: 12px;
-  height: 12px;
-}
-
-.wp img {
-  width: 25px;
-  height: 25px;
-}
-
-.wp {
-  position: fixed;
-  bottom: 0;
-  right: 20px;
-}
-
-.footer-p {
-  font-size: 12px;
 }
 
 @media (min-width: 480px) {
@@ -250,13 +174,6 @@ img {
   margin: 5%;
 }
 
-/*
-.formulario
-{
-    width: 500px;
-    height: auto;
-}
-*/
 .h1-contacto {
   font-family: "Lato", sans-serif;
   font-size: 60px;
@@ -270,17 +187,6 @@ img {
   font-size: 25px;
 }
 
-/*
-.div-form
-{
-    font-family: 'Lato', sans-serif;
-    font-size: 110%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}*/
 .div-boton {
   margin-top: 30px;
   margin-bottom: 25px;
@@ -297,8 +203,8 @@ form {
 }
 
 .form {
-  height: auto;
   width: 600px;
+  height: auto;
 }
 
 textarea {
@@ -316,18 +222,6 @@ label {
   font-size: 150%;
 }
 
-/*
-input:focus
-{
-    border: solid green;
-    outline: green;
-}
-
-textarea:focus
-{
-    border: solid green;
-    outline: green;
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -357,7 +251,7 @@ textarea:focus
   grid-row-start: span 2;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1000px) {
   .contenedor {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 400px;
@@ -519,9 +413,9 @@ iframe {
 }
 
 .card .adelante img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   object-fit: cover;
 }
 
@@ -535,9 +429,9 @@ iframe {
 }
 
 .card .atras img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   object-fit: cover;
 }
 

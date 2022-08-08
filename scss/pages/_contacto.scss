@@ -3,13 +3,7 @@
     text-align: center;
     margin: 5%;
 }
-/*
-.formulario
-{
-    width: 500px;
-    height: auto;
-}
-*/
+
 .h1-contacto
 {
     font-family: 'Lato', sans-serif;
@@ -24,17 +18,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 25px;
 }
-/*
-.div-form
-{
-    font-family: 'Lato', sans-serif;
-    font-size: 110%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}*/
+
 
 .div-boton
 {
@@ -53,15 +37,14 @@ form
     max-width: 100%;
 }
 
-.form{
-    height: auto;
-    width: 600px;
+.form
+{
+    @include tamanio (600px, auto);
 }
 
 textarea
 {
-    width: 250px;
-    height: 100px;
+    @include tamanio (250px, 100px);
 }
 
 legend
@@ -75,15 +58,3 @@ label
     font-family: 'Lato', sans-serif;
     font-size: 150%;
 }
-/*
-input:focus
-{
-    border: solid green;
-    outline: green;
-}
-
-textarea:focus
-{
-    border: solid green;
-    outline: green;
-}*/

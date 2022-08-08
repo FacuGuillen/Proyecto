@@ -24,8 +24,7 @@
 
 iframe
 {
-    width: 200px;
-    height: 100px;
+    @include tamanio (200px, 100px);
 }
 
 .div-recetas
@@ -107,13 +106,11 @@ iframe
 
     .recetas
     {
-        width: 460px;
-        height: auto;
+        @include tamanio (460px, auto);
     }
 
     iframe
     {
-        width: 210px;
-        height: 110px;
+        @include tamanio (210px, 110px);
     }
 }

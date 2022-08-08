@@ -6,8 +6,7 @@
 
 #section-inicio a img
 {
-    width: 40px;
-    height: 40px;
+    @include tamanio (40px, 40px);
     text-align: center;
 }
 
@@ -58,8 +57,7 @@
 
 #section-inicio a img
 {
-    width: 60px;
-    height: 60px;
+    @include tamanio (60px, 60px);
 }
 
 @media (min-width: 768px)

@@ -33,21 +33,8 @@
 #header-galeria
 {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
-}
-
-.logo-inicio
-{
-    width: 120px;
-    height: 80px;
-}
-
-#header-galeria
-{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }

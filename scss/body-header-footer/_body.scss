@@ -1,4 +1,4 @@
-.body-1
+.body
 {
     margin: 0;
     padding: 0;
@@ -14,28 +14,14 @@
 
 .body-pedidos
 {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    @extend .body;
     background-image: url(../Imagenes/pexels-pixabay-326268.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    padding-bottom: 0,1em;
-    min-height: 100vh;
 }
 
 .body-galeria
 {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    @extend .body;
     background-image: linear-gradient(to bottom, black, white);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding-bottom: 5em;
-    min-height: 100vh;
 }
 
 img

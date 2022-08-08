@@ -12,7 +12,7 @@
     <title>Contacto</title>
 </head>
 
-<body class="body-1">
+<body class="body">
 
     <header id="header">
 
@@ -49,35 +49,35 @@
             <p class="fw-bold p-contacto-2"> por favor haga click <a href="pedidos.html"> aqui </a> </p>
         </div>
 
-        <form class="formulario container">
+        <form class="container form">
 
-                <legend>Ingresa tus datos</legend>
+            <legend class="mt-2 mb-5 fw-bold">Ingrese sus datos</legend>
 
-                <div class="div-form">
-                    <label class="div-form" for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="" id="nombre" placeholder="Ingresa tu nombre completo">
-                </div>
+        <div class="mb-3">
+            <label for="nombre-y-apellido" class="form-label">Nombre y Apellido</label>
+            <input type="email" class="form-control" id="nombre-y-apellido" placeholder="Ingrese Nombre y Apellido">
+          </div>
 
-                <div class="div-form">
-                    <label class="div-form" for="num_tel">Numero de teléfono</label>
-                    <input type="tel" name="" id="num_tel" placeholder="Ingresa tu num de telefono">
-                </div>
+        <div class="mb-3">
+            <label for="num-telefono" class="form-label">Numero de teléfono</label>
+            <input type="email" class="form-control" id="num-telefono" placeholder="Ingrese su numero de celular">
+          </div>
 
-                <div class="div-form">
-                    <label class="div-form" for="mail">Ingrese correo electrónico </label>
-                    <input type="email" name="" id="mail" placeholder="Ingresa tu email">
-                </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Ingrese su correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+          </div>
 
-                <div class="div-form">
-                    <label class="div-form" for="texto">Ingrese texto</label>
-                </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ingrese texto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
 
-                <textarea name="" id="texto" cols="60" rows="10"></textarea>
+          <div class="div-boton">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </div>
 
-                <div class="div-boton">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                </div>
         </form>
 
     </section>
