@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url(../Imagenes/Fondo.jpg);
+    background-image: url(../Imagenes/Fondo.webp);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -15,7 +15,7 @@
 .body-pedidos
 {
     @extend .body;
-    background-image: url(../Imagenes/pexels-pixabay-326268.jpg);
+    background-image: url(../Imagenes/imagen-pedidos.webp);
 }
 
 .body-galeria
