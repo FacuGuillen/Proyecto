@@ -62,6 +62,7 @@ img {
 }
 
 .logo-inicio {
+  opacity: 0.4;
   width: 160px;
   height: 100px;
 }
@@ -133,8 +134,8 @@ img {
   font-family: "Delius", cursive;
   font-size: 25px;
   margin-top: 70px;
-  text-shadow: white -0.1em 0.1em 0.1em;
-  font-weight: bold;
+  background-color: gainsboro;
+  opacity: 0.6;
 }
 
 #section-inicio .p-index {
@@ -142,7 +143,8 @@ img {
   font-size: 50px;
   text-align: center;
   margin: 1%;
-  text-shadow: white -0.1em 0.1em 0.1em;
+  background-color: gainsboro;
+  opacity: 0.6;
 }
 
 .h1-index {
@@ -150,9 +152,11 @@ img {
   font-size: 75px;
   text-align: center;
   line-height: 130px;
-  padding: 10px;
-  margin-bottom: 50px;
-  text-shadow: white -0.1em 0.1em 0.1em;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: gainsboro;
+  opacity: 0.6;
 }
 
 #section-inicio a img:hover {
@@ -164,10 +168,6 @@ img {
   font-size: 20px;
 }
 
-#section-inicio .p-index {
-  font-size: 50px;
-}
-
 #section-inicio a img {
   width: 60px;
   height: 60px;
@@ -175,8 +175,18 @@ img {
 
 @media (min-width: 768px) {
   .h1-index {
+    padding: 50px;
     font-size: 160px;
-    text-shadow: none;
+    background-color: transparent;
+    opacity: 1;
+  }
+  #section-inicio .p-ig {
+    opacity: 1;
+    background-color: transparent;
+  }
+  #section-inicio .p-index {
+    opacity: 1;
+    background-color: transparent;
   }
 }
 .section-form {
