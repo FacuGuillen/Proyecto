@@ -128,18 +128,21 @@ img {
   text-align: center;
 }
 
-#section-inicio p {
+#section-inicio .p-ig {
   text-align: center;
   font-family: "Delius", cursive;
-  font-size: 100%;
+  font-size: 25px;
   margin-top: 70px;
+  text-shadow: white -0.1em 0.1em 0.1em;
+  font-weight: bold;
 }
 
 #section-inicio .p-index {
   font-family: "Delius", cursive;
-  font-size: 200%;
+  font-size: 50px;
   text-align: center;
   margin: 1%;
+  text-shadow: white -0.1em 0.1em 0.1em;
 }
 
 .h1-index {
@@ -147,8 +150,9 @@ img {
   font-size: 75px;
   text-align: center;
   line-height: 130px;
-  padding: 50px;
+  padding: 10px;
   margin-bottom: 50px;
+  text-shadow: white -0.1em 0.1em 0.1em;
 }
 
 #section-inicio a img:hover {
@@ -172,6 +176,7 @@ img {
 @media (min-width: 768px) {
   .h1-index {
     font-size: 160px;
+    text-shadow: none;
   }
 }
 .section-form {
