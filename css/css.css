@@ -11,7 +11,7 @@
 }
 
 .body-pedidos {
-  background-image: url(../Imagenes/imagen-pedidos.webp);
+  background-image: url(../Imagenes/pedidos.jpg);
 }
 
 .body-galeria {
@@ -22,7 +22,13 @@ img {
   max-width: 100%;
 }
 
-#header {
+.body-comodin {
+  background-color: rgba(255, 255, 255, 0.089);
+  margin: 0;
+  padding: 0;
+}
+
+#header, #header-pedidos {
   background-color: rgba(255, 255, 255, 0.575);
   display: flex;
   justify-content: space-around;
@@ -67,7 +73,11 @@ img {
   height: 100px;
 }
 
-#footer {
+#header-pedidos {
+  background-color: rgba(73, 71, 71, 0.575);
+}
+
+#footer, #footer-recetas, #footer-pedidos {
   display: flex;
   background-color: rgba(255, 255, 255, 0.575);
   position: absolute;
@@ -83,8 +93,8 @@ img {
 }
 
 .wp img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .wp {
@@ -118,6 +128,16 @@ img {
     font-size: 20px;
   }
 }
+#footer-pedidos {
+  background-color: rgba(73, 71, 71, 0.575);
+}
+
+#footer-recetas {
+  background-color: rgba(73, 71, 71, 0.575);
+  position: relative;
+  margin-top: 100px;
+}
+
 #section-inicio {
   grid-area: inicio;
   text-align: center;
@@ -378,10 +398,67 @@ iframe {
     height: 110px;
   }
 }
+.card {
+  max-width: 100%;
+  z-index: 1;
+}
+
+.img-card {
+  height: 200px;
+  z-index: 1;
+}
+
+.p-recetas {
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: gainsboro;
+  opacity: 1;
+}
+
+.h1-recetass {
+  position: fixed;
+}
+
+.h5-recetas, .h6-recetas {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: gainsboro;
+  opacity: 1;
+}
+
+.iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.h4-recetas {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+.card-recetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.enlace-recetas {
+  text-decoration: none;
+  color: black;
+}
+
+.p-beneficios {
+  font-size: 20px;
+}
+
 .h1-menu {
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-size: 250%;
+  font-size: 50px;
   line-height: 60px;
   padding: 1%;
 }
@@ -391,11 +468,11 @@ iframe {
   flex-direction: column;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: black;
 }
 
 .p a {
-  color: #fff;
+  color: black;
 }
 
 #menu {
@@ -474,6 +551,9 @@ iframe {
   #menu {
     flex-direction: row;
     gap: 100px;
+  }
+  .h1-menu {
+    font-size: 75px;
   }
 }
 

@@ -51,3 +51,9 @@
     width: 160px;
     height: 100px;
 }
+
+#header-pedidos
+{
+    @extend #header;
+    background-color: rgba(73, 71, 71, 0.575);
+}

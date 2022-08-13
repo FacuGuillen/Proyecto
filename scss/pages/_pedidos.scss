@@ -2,7 +2,7 @@
 {
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-size: 250%;
+    font-size: 50px;
     line-height: 60px;
     padding: 1%;
 }
@@ -13,12 +13,12 @@
     flex-direction: column;
     text-align: center;
     font-weight: bold;
-    color: #fff;
+    color: black;
 }
 
 .p a
 {
-    color: #fff;
+    color: black;
 }
 
 #menu
@@ -108,6 +108,11 @@
     {
         flex-direction: row;
         gap: 100px;
+    }
+
+    .h1-menu
+    {
+        font-size: 75px;
     }
 
 }
