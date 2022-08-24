@@ -24,14 +24,19 @@
     background-image: linear-gradient(to bottom, black, white);
 }
 
+.body-recetas
+{
+    @extend .body;
+    background-image:url(../Imagenes/pedidos.jpg);
+}
+
+.body-comidas
+{
+    @extend .body;
+    background-image: url(../Imagenes/comidas.webp)
+}
+
 img
 {
     max-width: 100%;
-}
-
-.body-comodin
-{
-    background-color: rgba(255, 255, 255, 0.089);
-    margin: 0;
-    padding: 0;
 }

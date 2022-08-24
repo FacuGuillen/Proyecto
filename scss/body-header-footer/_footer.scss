@@ -75,5 +75,18 @@
     @extend #footer;
     background-color: rgba(73, 71, 71, 0.575);
     position: relative;
-    margin-top: 100px;
+}
+
+@media (min-width: 1024px)
+{
+    #footer-recetas
+    {
+        position: absolute;
+    }
+}
+
+#footer-comidas
+{
+    @extend #footer;
+    background-color: rgba(73, 71, 71, 0.575);
 }

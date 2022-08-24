@@ -35,6 +35,21 @@
     background-color: white;
 }
 
+.logo-inicio
+{
+    opacity: 0.4;
+    width: 120px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#header-pedidos
+{
+    @extend #header;
+    background-color: rgba(73, 71, 71, 0.575);
+}
+
 /* HEADER GALERIA */ 
 #header-galeria
 {
@@ -43,17 +58,4 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.logo-inicio
-{
-    opacity: 0.4;
-    width: 160px;
-    height: 100px;
-}
-
-#header-pedidos
-{
-    @extend #header;
-    background-color: rgba(73, 71, 71, 0.575);
 }

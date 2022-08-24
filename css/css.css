@@ -1,4 +1,4 @@
-.body, .body-galeria, .body-pedidos {
+.body, .body-comidas, .body-recetas, .body-galeria, .body-pedidos {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -18,14 +18,16 @@
   background-image: linear-gradient(to bottom, black, white);
 }
 
-img {
-  max-width: 100%;
+.body-recetas {
+  background-image: url(../Imagenes/pedidos.jpg);
 }
 
-.body-comodin {
-  background-color: rgba(255, 255, 255, 0.089);
-  margin: 0;
-  padding: 0;
+.body-comidas {
+  background-image: url(../Imagenes/comidas.webp);
+}
+
+img {
+  max-width: 100%;
 }
 
 #header, #header-pedidos {
@@ -58,6 +60,18 @@ img {
   background-color: white;
 }
 
+.logo-inicio {
+  opacity: 0.4;
+  width: 120px;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#header-pedidos {
+  background-color: rgba(73, 71, 71, 0.575);
+}
+
 /* HEADER GALERIA */
 #header-galeria {
   display: flex;
@@ -67,17 +81,7 @@ img {
   justify-content: space-around;
 }
 
-.logo-inicio {
-  opacity: 0.4;
-  width: 160px;
-  height: 100px;
-}
-
-#header-pedidos {
-  background-color: rgba(73, 71, 71, 0.575);
-}
-
-#footer, #footer-recetas, #footer-pedidos {
+#footer, #footer-comidas, #footer-recetas, #footer-pedidos {
   display: flex;
   background-color: rgba(255, 255, 255, 0.575);
   position: absolute;
@@ -135,7 +139,15 @@ img {
 #footer-recetas {
   background-color: rgba(73, 71, 71, 0.575);
   position: relative;
-  margin-top: 100px;
+}
+
+@media (min-width: 1024px) {
+  #footer-recetas {
+    position: absolute;
+  }
+}
+#footer-comidas {
+  background-color: rgba(73, 71, 71, 0.575);
 }
 
 #section-inicio {
@@ -222,6 +234,16 @@ img {
   padding: 1%;
 }
 
+@media (max-width: 1200px) {
+  .h1-contacto {
+    background-color: gainsboro;
+    opacity: 0.6;
+  }
+  .p-contacto {
+    background-color: gainsboro;
+    opacity: 0.6;
+  }
+}
 .section-form p {
   font-family: "Lato", sans-serif;
   font-size: 25px;
@@ -300,123 +322,22 @@ label {
     transform: scale(1.5);
   }
 }
+.button-carrousel {
+  background-color: blue;
+  border-radius: 30px;
+}
+
 .section-recetas h1 {
-  text-align: center;
-  font-size: 70px;
-  line-height: 120px;
-  padding: 1%;
-}
-
-.recetas {
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-image: url(../Imagenes/Receta.png);
-  border: solid 1px black;
-  margin-right: 15px;
-  margin-bottom: 100px;
-  width: 400px;
-  align-items: center;
-  text-align: center;
-  max-width: 100%;
-}
-
-iframe {
-  width: 200px;
-  height: 100px;
-}
-
-.div-recetas {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.div-h1-recetas {
   text-align: center;
+  font-size: 400%;
+  line-height: 140px;
+  font-family: cursive;
+  padding: 35px;
 }
 
-.h1-recetas {
-  font-size: 250%;
-  line-height: 160px;
-  padding: 1%;
-  text-align: center;
-}
-
-.h2-recetas {
-  font-size: 220%;
-}
-
-.h3-recetas {
-  font-size: 150%;
-}
-
-.h3-recetas-barra {
-  font-size: 150%;
-}
-
-.p-recetas {
-  margin-top: 35px;
-}
-
-.p-recetas-pan {
-  margin-top: 30px;
-}
-
-.p-recetas-barra {
-  margin-top: 37px;
-}
-
-.p-recetas-garbanzo {
-  margin-top: 16px;
-}
-
-@media (min-width: 1200px) {
-  .section-recetas h1 {
-    justify-content: center;
-    text-align: center;
-    font-size: 400%;
-    line-height: 180px;
-  }
-  .div-recetas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 50px;
-  }
-  .recetas {
-    width: 460px;
-    height: auto;
-  }
-  iframe {
-    width: 210px;
-    height: 110px;
-  }
-}
-.card {
-  max-width: 100%;
-  z-index: 1;
-}
-
-.img-card {
+.img-recetas {
   height: 200px;
-  z-index: 1;
-}
-
-.p-recetas {
-  margin-bottom: 15px;
-  text-align: center;
-  background-color: gainsboro;
-  opacity: 1;
-}
-
-.h1-recetass {
-  position: fixed;
 }
 
 .h5-recetas, .h6-recetas {
@@ -425,17 +346,11 @@ iframe {
   margin-bottom: 25px;
   background-color: gainsboro;
   opacity: 1;
+  margin-left: 15px;
 }
 
-.iframe {
-  width: 100%;
-  height: 500px;
-}
-
-.h4-recetas {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 35px;
+.h6-recetas {
+  font-size: 20px;
 }
 
 .card-recetas {
@@ -449,10 +364,47 @@ iframe {
 .enlace-recetas {
   text-decoration: none;
   color: black;
+  color: red;
+}
+
+.clock {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+}
+
+.p-clock {
+  position: relative;
+  top: 110px;
+  left: 50px;
+}
+
+.p-clock-avena {
+  position: relative;
+  top: 62px;
+  left: 50px;
 }
 
 .p-beneficios {
   font-size: 20px;
+}
+
+.iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.p-recetas {
+  margin-bottom: 15px;
+  text-align: start;
+  background-color: gainsboro;
+  opacity: 1;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.div-beneficios li {
+  list-style: none;
 }
 
 .h1-menu {
@@ -555,6 +507,39 @@ iframe {
   .h1-menu {
     font-size: 75px;
   }
+}
+.p-beneficios {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.p-recetas {
+  margin-bottom: 15px;
+  text-align: start;
+  background-color: gainsboro;
+  opacity: 1;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.div-beneficios li {
+  list-style: circle;
+}
+
+.h4-recetas {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 35px;
+  font-family: cursive;
+}
+
+.h6-copa {
+  text-align: start;
 }
 
 /*# sourceMappingURL=css.css.map */
