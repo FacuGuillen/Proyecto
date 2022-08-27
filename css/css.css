@@ -81,6 +81,10 @@ img {
   justify-content: space-around;
 }
 
+.menu-recetas {
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
 #footer, #footer-comidas, #footer-recetas, #footer-pedidos {
   display: flex;
   background-color: rgba(255, 255, 255, 0.575);
@@ -373,16 +377,18 @@ label {
   font-size: 30px;
 }
 
-.p-clock {
+.p-clock, .p-clock-masatarta, .p-clock-2 {
   position: relative;
   top: 110px;
   left: 50px;
 }
 
-.p-clock-avena {
-  position: relative;
+.p-clock-2 {
   top: 62px;
-  left: 50px;
+}
+
+.p-clock-masatarta {
+  top: 85px;
 }
 
 .p-beneficios {
@@ -540,6 +546,14 @@ label {
 
 .h6-copa {
   text-align: start;
+}
+
+@media (min-width: 768px) {
+  .enlace-video {
+    position: relative;
+    top: 250px;
+    padding: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=css.css.map */

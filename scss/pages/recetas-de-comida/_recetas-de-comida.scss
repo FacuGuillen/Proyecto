@@ -37,3 +37,15 @@
 {
     text-align: start;
 }
+
+
+
+@media (min-width: 768px)
+{
+    .enlace-video
+    {
+        position: relative;
+        top: 250px;
+        padding: 1.5rem;
+    }
+}

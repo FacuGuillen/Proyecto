@@ -79,11 +79,16 @@
     left: 50px;
 }
 
-.p-clock-avena
+.p-clock-2
 {
-    position: relative;
+    @extend .p-clock;
     top: 62px;
-    left: 50px;
+}
+
+.p-clock-masatarta
+{
+    @extend .p-clock;
+    top: 85px;
 }
 
 .p-beneficios
