@@ -11,7 +11,7 @@
 }
 
 .body-pedidos {
-  background-image: url(../Imagenes/pedidos.jpg);
+  background-image: url(../Imagenes/pedidos.webp);
 }
 
 .body-galeria {
@@ -19,7 +19,7 @@
 }
 
 .body-recetas {
-  background-image: url(../Imagenes/pedidos.jpg);
+  background-image: url(../Imagenes/pedidos.webp);
 }
 
 .body-comidas {
@@ -96,8 +96,8 @@ img {
 }
 
 .logo-footer {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 .wp img {
@@ -112,7 +112,7 @@ img {
 }
 
 .footer-p {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .logo-footer:hover {
@@ -549,10 +549,16 @@ label {
 }
 
 @media (min-width: 768px) {
-  .enlace-video {
+  .enlace-tarta, .enlace-huevo-revuelto, .enlace-video-chia {
     position: relative;
     top: 250px;
     padding: 1.5rem;
+  }
+  .enlace-video-chia {
+    top: 100px;
+  }
+  .enlace-huevo-revuelto {
+    top: 200px;
   }
 }
 

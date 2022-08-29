@@ -42,10 +42,23 @@
 
 @media (min-width: 768px)
 {
-    .enlace-video
+    .enlace-tarta
     {
         position: relative;
         top: 250px;
         padding: 1.5rem;
     }
+
+    .enlace-video-chia
+    {
+        @extend .enlace-tarta;
+        top: 100px;
+    }
+
+    .enlace-huevo-revuelto
+    {
+        @extend .enlace-tarta;
+        top: 200px;
+    }
+
 }
